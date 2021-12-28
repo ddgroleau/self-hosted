@@ -22,4 +22,6 @@ $xxs:.15rem;
 $box-border: solid grey 1px;
 $radius: 5px;
 $transition:all ease-in .25s;
-$font-family: monospace;
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@;0,400;0,700;1,400;1,700&display=swap');
+$font-family: 'Roboto Mono', monospace;

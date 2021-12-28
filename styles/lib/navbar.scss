@@ -1,0 +1,64 @@
+@import './lib.scss';
+
+.nav {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    max-height: max-content;
+  }
+  
+  .navbar {
+    display: flex;
+    width: 100%;
+    max-height: $lg;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  
+  .navbar-toggler {
+    opacity: 80%;
+  }
+  
+  .nav-header {
+    display: none;
+  }
+  
+  .nav-link {
+    margin: 0 $rg;
+    border-bottom: solid $ghost-white 1px;
+  }
+  
+  .nav-link:hover {
+    border-bottom: solid $half-white 1px;
+    color:$white;
+    transition: $transition;
+  }
+  
+  .navbar-dropdown {
+    display: none;
+    position: absolute;
+    flex-direction: column;
+    background-color: $slate-ghost;
+    top: $xxl;
+    right: 0;
+    padding-right: 1rem;
+    border-radius: $radius;
+    z-index: 100;
+  }
+  
+  .navbar-dropdown-home {
+    display: none;
+    position: absolute;
+    flex-direction: column;
+    background-color: $night-sky-ghost;
+    top: $xxl;
+    right: 0;
+    padding-right: 1rem;
+    border-radius: $radius;
+    z-index: 100;
+    a {
+      color: $salmon;
+    }
+  }

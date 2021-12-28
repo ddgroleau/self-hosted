@@ -1,0 +1,22 @@
+@import './lib.scss';
+
+@media only screen and (min-width:1024px) {
+    .nav {
+      flex-direction: row;
+    }
+    .nav-header {
+      display: flex;
+    }
+    .navbar {
+      justify-content: flex-start;
+    }
+    .nav-header {
+      width: 100%;
+    }
+    .btn {
+      margin: 0 $sm;
+    }
+    .navbar-toggler {
+      display: none;
+    }
+  }

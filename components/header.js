@@ -20,16 +20,19 @@ const Header = ({pageTitle}) => {
     
   return (
     <>
-    <head>
-        <title>{pageTitle}</title>
-        <script src="https://kit.fontawesome.com/34584ec87f.js" crossorigin="anonymous"></script>
-    </head>
+    <title>{pageTitle}</title>
     <header>
         <div id="navbar" className="navbar">
             <div className="social">
-                <i href="https://github.com/ddgroleau" className="fab fa-github fa-2x"></i>
-                <i href="https://www.linkedin.com/in/dangroleau/" className="fab fa-linkedin fa-2x"></i>
-                <i href="https://twitter.com/_FullStackDan" className="fab fa-twitter fa-2x"></i>
+                <img href="https://github.com/ddgroleau" 
+                    data-attribution="Credit: https://fontawesome.com/v5.15/icons/github?style=brands, License: https://fontawesome.com/license, SVG Fill changed to #ffff." 
+                    className="img-brand" src='./assets/github.svg'/>
+                <img href="https://www.linkedin.com/in/dangroleau/" className="img-brand" src='./assets/linkedin.svg'
+                    data-attribution="Credit: https://fontawesome.com/v5.15/icons/linkedin?style=brands, License: https://fontawesome.com/license, SVG Fill changed to #ffff." 
+                    className="img-brand" src='./assets/linkedin.svg'/>
+                <img href="https://twitter.com/_FullStackDan" className="img-brand" src='./assets/twitter.svg'
+                    data-attribution="Credit: https://fontawesome.com/v5.15/icons/twitter?style=brands, License: https://fontawesome.com/license, SVG Fill changed to #ffff." 
+                    className="img-brand" src='./assets/twitter.svg'/>
             </div>
             <nav id="nav-header" className={navHeader}>
                 <a className="link nav-link" href="/">Home</a>

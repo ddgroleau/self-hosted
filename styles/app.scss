@@ -68,6 +68,12 @@ footer {
   display: none;
 }
 
+.container {
+  width: 100%;
+  height: 100%;
+  padding-top: clamp(10%, 11%,12%);
+}
+
 .home-container {
   padding: 0;
   margin: 0;
@@ -146,6 +152,14 @@ footer {
   transition: $transition;
 }
 
+.img-brand {
+  width: $lg;
+}
+.img-brand:hover {
+  transform: scale(125%);
+  transition: $transition;
+}
+
 .about-box {
   display: flex;
   align-items: center;
@@ -207,12 +221,6 @@ footer {
   i {
     padding: 0 $sm;
   }
-}
-
-.fab:hover {
-  color: $green;
-  transition: $transition;
-  cursor: pointer;
 }
 
 .contact-form {

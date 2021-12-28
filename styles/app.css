@@ -109,6 +109,11 @@ footer {
 .hidden {
   display: none; }
 
+.container {
+  width: 100%;
+  height: 100%;
+  padding-top: clamp(10%, 11%, 12%); }
+
 .home-container {
   padding: 0;
   margin: 0;
@@ -176,6 +181,13 @@ footer {
   transform: scale(125%);
   transition: all ease-in 0.25s; }
 
+.img-brand {
+  width: 2rem; }
+
+.img-brand:hover {
+  transform: scale(125%);
+  transition: all ease-in 0.25s; }
+
 .about-box {
   display: flex;
   align-items: center;
@@ -230,11 +242,6 @@ footer {
   padding-right: 2.5rem; }
   .social i {
     padding: 0 0.5rem; }
-
-.fab:hover {
-  color: #15B097;
-  transition: all ease-in 0.25s;
-  cursor: pointer; }
 
 .contact-form {
   display: flex;

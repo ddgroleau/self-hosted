@@ -20,36 +20,36 @@ const Header = ({pageTitle}) => {
     
   return (
     <>
-    <title>{pageTitle}</title>
-    <header>
-        <div id="navbar" className="navbar">
-            <div className="social">
-                <img href="https://github.com/ddgroleau" 
-                    data-attribution="Credit: https://fontawesome.com/v5.15/icons/github?style=brands, License: https://fontawesome.com/license, SVG Fill changed to #ffff." 
-                    className="img-brand" src='./assets/github.svg'></img>
-                <img href="https://www.linkedin.com/in/dangroleau/" className="img-brand" src='./assets/linkedin.svg'
-                    data-attribution="Credit: https://fontawesome.com/v5.15/icons/linkedin?style=brands, License: https://fontawesome.com/license, SVG Fill changed to #ffff." 
-                    className="img-brand" src='./assets/linkedin.svg'></img>
-                <img href="https://twitter.com/_FullStackDan" className="img-brand" src='./assets/twitter.svg'
-                    data-attribution="Credit: https://fontawesome.com/v5.15/icons/twitter?style=brands, License: https://fontawesome.com/license, SVG Fill changed to #ffff." 
-                    className="img-brand" src='./assets/twitter.svg'></img>
+        <title>{pageTitle}</title>
+        <header>
+            <div id="navbar" className="navbar">
+                <div className="social">
+                    <img href="https://github.com/ddgroleau" 
+                        data-attribution="Credit: https://fontawesome.com/v5.15/icons/github?style=brands, License: https://fontawesome.com/license, SVG Fill changed to #ffff." 
+                        className="img-brand" src='./assets/github.svg'></img>
+                    <img href="https://www.linkedin.com/in/dangroleau/" className="img-brand" src='./assets/linkedin.svg'
+                        data-attribution="Credit: https://fontawesome.com/v5.15/icons/linkedin?style=brands, License: https://fontawesome.com/license, SVG Fill changed to #ffff." 
+                        className="img-brand" src='./assets/linkedin.svg'></img>
+                    <img href="https://twitter.com/_FullStackDan" className="img-brand" src='./assets/twitter.svg'
+                        data-attribution="Credit: https://fontawesome.com/v5.15/icons/twitter?style=brands, License: https://fontawesome.com/license, SVG Fill changed to #ffff." 
+                        className="img-brand" src='./assets/twitter.svg'></img>
+                </div>
+                <nav id="nav-header" className={navHeader}>
+                    <a className="link nav-link" href="/">Home</a>
+                    <a className="link nav-link" href="/projects">Projects</a>
+                    <a className="link nav-link" href="/tutorials">Tutorials</a>
+                    <a className="link nav-link" href="/contact">Contact</a>
+                </nav>
+                <img id="navbar-toggler" className="navbar-toggler" src="./assets/navbar-toggler.svg" onClick={toggleNav} />
             </div>
-            <nav id="nav-header" className={navHeader}>
-                <a className="link nav-link" href="/">Home</a>
-                <a className="link nav-link" href="/projects">Projects</a>
-                <a className="link nav-link" href="/tutorials">Tutorials</a>
-                <a className="link nav-link" href="/contact">Contact</a>
-            </nav>
-            <img id="navbar-toggler" className="navbar-toggler" src="./assets/navbar-toggler.svg" onClick={toggleNav} />
-        </div>
-        <div id="navbar-dropdown" className={navbarDropdownClass}>
-                <a id="home" className={btnClass} href="/">Home</a>
-                <a id="projects" className="link btn" href="/projects">Projects</a>
-                <a id="tutorials" className="link btn " href="/tutorials">Tutorials</a>
-                <a id="about" className={btnClass} href="/#about-anchor">About</a>
-                <a id="contact" className="link btn" href="/contact">Contact</a>
-        </div>
-    </header>
+            <div id="navbar-dropdown" className={navbarDropdownClass}>
+                    <a id="home" className={btnClass} href="/">Home</a>
+                    <a id="projects" className="link btn" href="/projects">Projects</a>
+                    <a id="tutorials" className="link btn " href="/tutorials">Tutorials</a>
+                    <a id="about" className={btnClass} href="/#about-anchor">About</a>
+                    <a id="contact" className="link btn" href="/contact">Contact</a>
+            </div>
+        </header>
     </>
   )}
 

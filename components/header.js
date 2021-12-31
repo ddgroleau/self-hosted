@@ -26,13 +26,13 @@ const Header = ({pageTitle}) => {
             <div className="social">
                 <img href="https://github.com/ddgroleau" 
                     data-attribution="Credit: https://fontawesome.com/v5.15/icons/github?style=brands, License: https://fontawesome.com/license, SVG Fill changed to #ffff." 
-                    className="img-brand" src='./assets/github.svg'/>
+                    className="img-brand" src='./assets/github.svg'></img>
                 <img href="https://www.linkedin.com/in/dangroleau/" className="img-brand" src='./assets/linkedin.svg'
                     data-attribution="Credit: https://fontawesome.com/v5.15/icons/linkedin?style=brands, License: https://fontawesome.com/license, SVG Fill changed to #ffff." 
-                    className="img-brand" src='./assets/linkedin.svg'/>
+                    className="img-brand" src='./assets/linkedin.svg'></img>
                 <img href="https://twitter.com/_FullStackDan" className="img-brand" src='./assets/twitter.svg'
                     data-attribution="Credit: https://fontawesome.com/v5.15/icons/twitter?style=brands, License: https://fontawesome.com/license, SVG Fill changed to #ffff." 
-                    className="img-brand" src='./assets/twitter.svg'/>
+                    className="img-brand" src='./assets/twitter.svg'></img>
             </div>
             <nav id="nav-header" className={navHeader}>
                 <a className="link nav-link" href="/">Home</a>

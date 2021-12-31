@@ -12,7 +12,7 @@ const Home = () => {
             <nav className="nav">
                 <a className="home-link btn" href="/projects">Projects</a>
                 <a className="home-link btn" href="/tutorials">Tutorials</a>
-                <a className="home-link btn" href="#about-anchor">About</a>
+                <a className="home-link btn" href="/contact">Contact</a>
             </nav>
         </div>
       </div>

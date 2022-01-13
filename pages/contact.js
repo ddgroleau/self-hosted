@@ -9,7 +9,7 @@ const Contact = () => {
         }
     });
     return (
-        <div class="contact-container">
+        <div className="contact-container">
             <Header pageTitle={'Contact | Dan Groleau'} />
                 <div className="content-box">
                     <form method="POST" action="" className="contact-form">
@@ -27,6 +27,9 @@ const Contact = () => {
                         </div>
                         <div className="form-item">
                             <textarea name="contact_message" type="text" className="btn form-input  form-textarea" placeholder="Your message"></textarea>
+                        </div>
+                        <div className="form-disclaimer">
+                            <i>By submitting this from, you agree to our <a href="privacy">Privacy Policy and Terms of Use.</a></i>
                         </div>
                         <div className="form-item">
                             <button className="btn form-submit" type="submit">Submit</button>

@@ -1,0 +1,61 @@
+@import './lib.scss';
+
+body, html {
+    height: 100%;
+  }
+  
+  body {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+      font-family: $font-family;
+      background-color: $slate;
+      color: $white;
+  }
+  
+  h1 {
+      font-size: $xxl;
+    }
+    
+  h2 {
+      font-size: $xl;
+  }
+  
+  h3 {
+      font-size: $lg;
+  }
+  
+  h4, h5, h6 {
+    font-size: $md;
+  }
+
+  h6 {
+      font-size: $md-rg;
+  }
+  
+  p, a {
+    font-size: $rg;
+  }
+  
+  img {
+    padding: $xs $rg;
+    cursor: pointer;
+    height: auto;
+  }
+  
+  header {
+    position: fixed;
+    width: 100%;  
+    top: $sm;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+  }
+  
+  footer {
+      font-size: $rg;
+      position: fixed;
+      display: flex;
+      width: 100%;
+      bottom: $xxs;
+  }

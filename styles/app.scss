@@ -1,66 +1,6 @@
 @import './lib/lib.scss';
 
-body, html {
-  height: 100%;
-}
-
-body {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: $font-family;
-    background-color: $slate;
-    color: $white;
-}
-
-h1 {
-    font-size: $xxl;
-  }
-  
-h2 {
-    font-size: $xl;
-}
-
-h3 {
-    font-size: $lg;
-}
-
-h4, h5, h6 {
-  font-size: $md;
-}
-
-p, a {
-  font-size: $rg;
-}
-
-img {
-  padding: $xs $rg;
-  cursor: pointer;
-  height: auto;
-}
-
-header {
-  position: fixed;
-  width: 100%;  
-  top: $sm;
-  display: flex;
-  flex-direction: column;
-  z-index: 1;
-}
-
-footer {
-    font-size: $rg;
-    position: fixed;
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    bottom: $sm;
-    a {
-      margin-left: $lg;
-      text-decoration: none;
-      color: $white;
-    }
-}
+@import './lib/global.scss';
 
 @import './lib/navbar.scss';
 
@@ -92,7 +32,7 @@ footer {
 .contact-container {
   width: 100%;
   height: 100%;
-  padding-top: clamp(10%, 11%,12%);
+  padding: clamp(10%, 11%,12%) 0;
 }
 
 .content-box {
@@ -198,6 +138,7 @@ footer {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  text-align: center;
   width: 100%;
   height: 30%;
   z-index: 1;
@@ -234,31 +175,24 @@ footer {
  
 }
 
-.form-item {
-  margin: 0.5%;
+@import './lib/form.scss';
+
+.privacy {
+  max-width: 90%;
+  margin-bottom: 25%;
 }
 
-.form-textarea {
-  height: 6rem;
+.footer-box {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 0 $sm;
+  font-size: $sm-rg;
+  .privacy-text {
+    font-size: $sm-rg;
+    text-decoration: none;
+    color: $white;
+  }
 }
-
-.form-input {
-  width: 20rem;
-  font-size: $md-rg;
-}
-
-.form-submit {
-  background-color: $purple-transparent;
-  color: grey;
-  border: none;
-  font-size: $md-rg;
-}
-
-.form-submit:hover {
-  border: none;
-  background-color: $purple;
-  cursor: pointer;
-}
-
 
 @import './lib/mobile.scss';

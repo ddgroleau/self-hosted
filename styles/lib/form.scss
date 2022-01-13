@@ -1,0 +1,38 @@
+@import './lib.scss';
+
+.form-item {
+    margin: 0.5%;
+  }
+  
+  .form-textarea {
+    height: 6rem;
+  }
+  
+  .form-input {
+    width: 20rem;
+    font-size: $md-rg;
+  }
+  
+  .form-submit {
+    background-color: $purple-transparent;
+    color: grey;
+    border: none;
+    font-size: $md-rg;
+  }
+  
+  .form-disclaimer {
+    font-size: $sm-rg;
+    padding: $sm;
+    text-align: center;
+    a {
+      font-size: $sm-rg;
+      text-decoration: none;
+    }
+  }
+  
+  .form-submit:hover {
+    border: none;
+    background-color: $purple;
+    cursor: pointer;
+    transition: $transition;
+  }

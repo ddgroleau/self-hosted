@@ -4,7 +4,7 @@ const Footer = () => {
     <footer>
         <div className="footer-box">
             <strong>{year} | Dan Groleau</strong>
-            <a href="contact">Contact</a>
+            <a className="privacy-text" href="privacy">Privacy Policy and Terms of Use</a>
         </div>
     </footer>
   )}

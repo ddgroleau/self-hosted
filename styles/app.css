@@ -1,6 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@;0,400;0,700;1,400;1,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@;0,400;0,700;1,400;1,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@;0,400;0,700;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@;0,400;0,700;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@;0,400;0,700;1,400;1,700&display=swap");
 body, html {
   height: 100%; }
 
@@ -24,6 +26,9 @@ h3 {
 h4, h5, h6 {
   font-size: 1.5rem; }
 
+h6 {
+  font-size: 1.25rem; }
+
 p, a {
   font-size: 1rem; }
 
@@ -45,12 +50,7 @@ footer {
   position: fixed;
   display: flex;
   width: 100%;
-  justify-content: center;
-  bottom: 0.5rem; }
-  footer a {
-    margin-left: 2rem;
-    text-decoration: none;
-    color: #fff; }
+  bottom: 0.15rem; }
 
 .nav {
   display: flex;
@@ -71,7 +71,8 @@ footer {
   opacity: 80%; }
 
 .nav-header {
-  display: none; }
+  display: none;
+  justify-content: flex-end; }
 
 .nav-link {
   margin: 0 1rem;
@@ -131,7 +132,7 @@ footer {
 .contact-container {
   width: 100%;
   height: 100%;
-  padding-top: clamp(10%, 11%, 12%); }
+  padding: clamp(10%, 11%, 12%) 0; }
 
 .content-box {
   display: flex;
@@ -221,6 +222,7 @@ footer {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  text-align: center;
   width: 100%;
   height: 30%;
   z-index: 1; }
@@ -267,10 +269,34 @@ footer {
   border: none;
   font-size: 1.25rem; }
 
+.form-disclaimer {
+  font-size: 0.75rem;
+  padding: 0.5rem;
+  text-align: center; }
+  .form-disclaimer a {
+    font-size: 0.75rem;
+    text-decoration: none; }
+
 .form-submit:hover {
   border: none;
   background-color: #8A4FFF;
-  cursor: pointer; }
+  cursor: pointer;
+  transition: all ease-in 0.25s; }
+
+.privacy {
+  max-width: 90%;
+  margin-bottom: 25%; }
+
+.footer-box {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 0 0.5rem;
+  font-size: 0.75rem; }
+  .footer-box .privacy-text {
+    font-size: 0.75rem;
+    text-decoration: none;
+    color: #fff; }
 
 @media only screen and (min-width: 1024px) {
   .nav {

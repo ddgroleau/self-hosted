@@ -17,16 +17,16 @@ const Contact = () => {
                             <h3>Contact</h3>
                         </div>
                         <div className="form-item">
-                            <input name="contact_name" type="text" className="btn form-input" placeholder="Name" />
+                            <input name="contactName" type="text" className="btn form-input" placeholder="Name" />
                         </div>
                         <div className="form-item">
-                            <input name="contact_email" type="email"className="btn form-input" placeholder="Email (Optional)" />
+                            <input name="contactEmail" type="email"className="btn form-input" placeholder="Email" />
                         </div>
                         <div className="form-item">
-                            <input name="contact_phone" type="phone" className="btn form-input" placeholder="Phone (Optional)" />
+                            <input name="contactCompany" type="phone" className="btn form-input" placeholder="Company (Optional)" />
                         </div>
                         <div className="form-item">
-                            <textarea name="contact_message" type="text" className="btn form-input  form-textarea" placeholder="Your message"></textarea>
+                            <textarea name="contactMessage" type="text" className="btn form-input  form-textarea" placeholder="Your message"></textarea>
                         </div>
                         <div className="form-disclaimer">
                             <i>By submitting this from, you agree to our <a href="privacy">Privacy Policy and Terms of Use.</a></i>

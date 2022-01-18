@@ -4,10 +4,11 @@
   @include flex();
   justify-content: space-between;
   padding: 0 $sm;
+  color: $purple;
   font-size: $sm-rg;
   .footer__privacy {
     font-size: $sm-rg;
     text-decoration: none;
-    color: $white;
+    color: $purple;
   }
 }

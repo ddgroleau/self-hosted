@@ -5,7 +5,7 @@ const Privacy = () => {
     return (
         <Layout pageTitle={'Privacy | Dan Groleau'}>
             <div className="container">
-                <div className="content__box">
+                <div className="content__container">
                     <div className="privacy__container">
                     <h3>Privacy Policy and Terms of Use</h3>
                     <h4>Privacy Policy</h4>

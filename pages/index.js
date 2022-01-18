@@ -8,12 +8,23 @@ const Home = () => {
         <div className="home__header">
           <div className="home__content">
               <h1>Dan Groleau</h1>
-              <h3>Software Engineer</h3>
               <nav className="nav">
-                <a className="home__link btn" href="#about-anchor">About</a>
-                <a className="home__link btn" href="/projects">Projects</a>
-                <a className="home__link btn" href="/tutorials">Tutorials</a>
-                <a className="home__link btn" href="/contact">Contact</a>
+                <a href="#about-anchor" className="home__link btn">
+                  <i class="fas fa-user-circle"></i>
+                  <span>About Me</span>
+                </a>
+                <a href="/projects" className="home__link btn">
+                  <i class="fas fa-laptop-code"></i>
+                  <span>Projects</span>
+                </a>
+                <a href="/tutorials" className="home__link btn">
+                  <i class="fas fa-info-circle"></i>
+                  <span>Tutorials</span>
+                </a>
+                <a href="/contact" className="home__link btn">
+                  <i class="fas fa-envelope-open-text"></i>
+                  <span>Contact</span>
+                </a>
               </nav>
           </div>
         </div>

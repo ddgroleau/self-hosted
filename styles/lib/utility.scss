@@ -9,7 +9,7 @@
   height: 100%;
   padding-top: clamp(10%, 11%,12%);
 }
-.content__box {
+.content__container {
   @include flexColumn();
   @include centerBothAxis();
   height: 100%;
@@ -34,11 +34,7 @@
   color: #fff;
   transition: $transition;
 }
-.return-home {
-  padding: $rg;
-}
 
-.return-home:hover {
-  color: $white;
-}
+
+
 

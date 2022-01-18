@@ -16,4 +16,10 @@
     .navbar__toggle-btn{
       display: none;
     }
+    .about__content {
+      flex-direction: row;
+    }
+    .img__brand {
+      min-width: $lg;
+    }
 }

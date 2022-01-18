@@ -1,5 +1,6 @@
 import Layout from '../pages/layout';
 import { useEffect } from 'react';
+import ReturnHomeLink from '../components/return-home-link';
 
 const Contact = () => {
     useEffect(() => {
@@ -10,7 +11,7 @@ const Contact = () => {
     return (
         <Layout pageTitle={'Contact | Dan Groleau'} >
             <div className="contact__container">
-                <div className="content__box">
+                <div className="content__container">
                     <form method="POST" action="" className="contact__form">
                         <div className="form__item">
                             <h3>Contact</h3>
@@ -34,7 +35,7 @@ const Contact = () => {
                             <button className="btn form__submit" type="submit">Submit</button>
                         </div>
                     </form>
-                    <a className="link return-home" href="/">Return to Home</a>
+                    <ReturnHomeLink/>
                 </div>
             </div>
         </Layout>

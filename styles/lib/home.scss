@@ -16,9 +16,13 @@
   }
 
   .home__link {
+    display: flex;
+    justify-content: space-between;
     font-size: $md;
+    min-width: 8rem;
     text-decoration: none;
-    color:$salmon;
+    color: $white;
+    font-size: $md-rg;
   }
 
   .home__header {

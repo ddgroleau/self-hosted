@@ -1,0 +1,14 @@
+@import './lib.scss';
+
+.return-home__container {
+    @include flex();
+    @include centerBothAxis();
+}
+
+.return-home__link {
+    padding: $rg;
+}
+  
+.return-home__link:hover {
+  color: $white;
+}

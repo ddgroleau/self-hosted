@@ -2,9 +2,9 @@ const Footer = () => {
     const year = new Date().getFullYear();
   return (
     <footer>
-        <div className="footer-box">
+        <div className="footer__content">
             <strong>{year} | Dan Groleau</strong>
-            <a className="privacy-text" href="privacy">Privacy Policy and Terms of Use</a>
+            <a className="footer__privacy" href="privacy">Privacy Policy and Terms of Use</a>
         </div>
     </footer>
   )}

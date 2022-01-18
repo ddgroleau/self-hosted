@@ -25,7 +25,7 @@ body, html {
       font-size: $lg;
   }
   
-  h4, h5, h6 {
+  h4, h5 {
     font-size: $md;
   }
 
@@ -44,18 +44,15 @@ body, html {
   }
   
   header {
+    @include flexColumn();
     position: fixed;
-    width: 100%;  
     top: $sm;
-    display: flex;
-    flex-direction: column;
     z-index: 1;
   }
   
   footer {
       font-size: $rg;
       position: fixed;
-      display: flex;
-      width: 100%;
+      @include flex();
       bottom: $xxs;
   }

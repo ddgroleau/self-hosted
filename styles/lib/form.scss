@@ -1,26 +1,26 @@
 @import './lib.scss';
 
-.form-item {
+.form__item {
     margin: 0.5%;
   }
   
-  .form-textarea {
+  .form__textarea {
     height: 6rem;
   }
   
-  .form-input {
+  .form__input {
     width: 20rem;
     font-size: $md-rg;
   }
   
-  .form-submit {
+  .form__submit {
     background-color: $purple-transparent;
     color: grey;
     border: none;
     font-size: $md-rg;
   }
   
-  .form-disclaimer {
+  .form__disclaimer {
     font-size: $sm-rg;
     padding: $sm;
     text-align: center;
@@ -30,7 +30,7 @@
     }
   }
   
-  .form-submit:hover {
+  .form__submit:hover {
     border: none;
     background-color: $purple;
     cursor: pointer;

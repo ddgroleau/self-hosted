@@ -1,0 +1,26 @@
+@import './lib.scss';
+
+.about__container {
+  background-color: $slate-ghost;
+  @include flexColumn();
+  height: 100%;
+  justify-content: flex-start;
+  align-items: center;
+  padding: $md 0;
+}
+
+.about__content {
+  @include flexColumn();
+  @include centerBothAxis();
+    text-align: center;
+    max-width: 350px;
+    font-size: $rg;
+}
+
+.about__skill-icons{
+  @include flex();
+  justify-content: center;
+  align-items: flex-start;
+  padding: $sm;
+  flex-wrap: wrap;
+}

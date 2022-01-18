@@ -1,3 +1,4 @@
+// Colors
 $slate:#161616;
 $slate-ghost: rgba(22,22,22, .75);
 $white:#fff;
@@ -10,6 +11,9 @@ $night-sky: #203139;
 $night-sky-ghost: rgba(32, 49, 57, .75);
 $half-white: rgba(255,255,255,0.5);
 $ghost-white: rgba(255,255,255,0.1);
+
+// Sizes
+$xxxl:4rem;
 $xxl:3rem;
 $xl:2.5rem;
 $lg:2rem;
@@ -20,9 +24,28 @@ $sm-rg:.75rem;
 $sm:.5rem;
 $xs:.25rem;
 $xxs:.15rem;
+
+// Properties
 $box-border: solid grey 1px;
 $radius: 5px;
-$transition:all ease-in .25s;
+$transition:all ease-in .2s;
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@;0,400;0,700;1,400;1,700&display=swap');
-$font-family: 'Roboto Mono', monospace;
+// Font
+@import url('https://fonts.googleapis.com/css2?family=Recursive:ital,wght@0,400;0,700;1,400&display=swap');
+$font-family:'Recursive', sans-serif;
+
+// Mixins
+@mixin flex {
+    display: flex;
+    width: 100%;
+}
+
+@mixin flexColumn {
+    @include flex();
+    flex-direction: column;
+}
+
+@mixin centerBothAxis {
+    justify-content: center;
+    align-items: center;
+}

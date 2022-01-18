@@ -1,6 +1,5 @@
-import Footer from "../components/footer";
-import Header from "../components/header";
-import { useEffect, useState } from 'react';
+import Layout from '../pages/layout';
+import { useEffect } from 'react';
 
 const Contact = () => {
     useEffect(() => {
@@ -9,36 +8,36 @@ const Contact = () => {
         }
     });
     return (
-        <div className="contact-container">
-            <Header pageTitle={'Contact | Dan Groleau'} />
-                <div className="content-box">
-                    <form method="POST" action="" className="contact-form">
-                        <div className="form-item">
+        <Layout pageTitle={'Contact | Dan Groleau'} >
+            <div className="contact__container">
+                <div className="content__box">
+                    <form method="POST" action="" className="contact__form">
+                        <div className="form__item">
                             <h3>Contact</h3>
                         </div>
-                        <div className="form-item">
-                            <input name="contactName" type="text" className="btn form-input" placeholder="Name" />
+                        <div className="form__item">
+                            <input name="contactName" type="text" className="btn form__input" placeholder="Name" />
                         </div>
-                        <div className="form-item">
-                            <input name="contactEmail" type="email"className="btn form-input" placeholder="Email" />
+                        <div className="form__item">
+                            <input name="contactEmail" type="email"className="btn form__input" placeholder="Email" />
                         </div>
-                        <div className="form-item">
-                            <input name="contactCompany" type="phone" className="btn form-input" placeholder="Company (Optional)" />
+                        <div className="form__item">
+                            <input name="contactCompany" type="phone" className="btn form__input" placeholder="Company (Optional)" />
                         </div>
-                        <div className="form-item">
-                            <textarea name="contactMessage" type="text" className="btn form-input  form-textarea" placeholder="Your message"></textarea>
+                        <div className="form__item">
+                            <textarea name="contactMessage" type="text" className="btn form__input  form__textarea" placeholder="Your message"></textarea>
                         </div>
-                        <div className="form-disclaimer">
+                        <div className="form__disclaimer">
                             <i>By submitting this from, you agree to our <a href="privacy">Privacy Policy and Terms of Use.</a></i>
                         </div>
-                        <div className="form-item">
-                            <button className="btn form-submit" type="submit">Submit</button>
+                        <div className="form__item">
+                            <button className="btn form__submit" type="submit">Submit</button>
                         </div>
                     </form>
                     <a className="link return-home" href="/">Return to Home</a>
                 </div>
-            <Footer/>
-        </div>
+            </div>
+        </Layout>
     );
 }
 

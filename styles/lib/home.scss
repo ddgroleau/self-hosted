@@ -1,0 +1,40 @@
+@import './lib.scss';
+
+.home__container {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    background-image: url('../public/assets/night.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: cover;
+    background-size: cover;
+    overflow-x: hidden;
+    position: relative;
+    z-index: 0;
+  }
+
+  .home__link {
+    font-size: $md;
+    text-decoration: none;
+    color:$salmon;
+  }
+
+  .home__header {
+    @include flexColumn();
+    @include centerBothAxis();
+    height: 100%;
+    min-height: 100vh;
+    min-width: 100vw;
+    padding-bottom: $xxl;
+  }
+  
+  .home__content{
+    position: relative;
+    @include flexColumn();
+    @include centerBothAxis();
+    text-align: center;
+    height: 30%;
+    z-index: 1;
+  }

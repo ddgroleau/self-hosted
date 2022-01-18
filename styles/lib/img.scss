@@ -1,0 +1,25 @@
+@import './lib.scss';
+
+.img__scale-md {
+    width: $lg;
+  }
+  
+.img__scale-lg {
+  width: 5rem;
+}
+
+.img__hover:hover {
+  transform: scale(125%);
+  transition: $transition;
+}
+
+.img__brand {
+  width: $lg;
+  min-width: 20px;
+  height: 100%;
+}
+
+.img__brand:hover {
+  transform: scale(125%);
+  transition: $transition;
+}

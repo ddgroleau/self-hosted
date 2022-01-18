@@ -1,16 +1,15 @@
-import Footer from "../components/footer";
-import Header from "../components/header";
+import Layout from '../pages/layout';
 
 const Projects = () => {
 
     return (
         <div className="container">
-            <Header pageTitle={'Projects | Dan Groleau'}/>
-                <div className="content-box">
+            <Layout pageTitle={'Projects | Dan Groleau'}>
+                <div className="content__box">
                     <h3>Projects</h3>
                     <a className="link return-home" href="/">Return to Home</a>
                 </div>
-            <Footer />
+            </Layout>
         </div>
     )
 }

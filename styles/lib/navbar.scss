@@ -1,65 +1,71 @@
 @import './lib.scss';
 
 .nav {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
+  @include flexColumn();
+  @include centerBothAxis();
     max-height: max-content;
-  }
+}
   
-  .navbar {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: nowrap;
-  }
-  
-  .navbar-toggler {
-    opacity: 80%;
-  }
-  
-  .nav-header {
-    display: none;
-    justify-content: flex-end;
-  }
-  
-  .nav-link {
-    margin: 0 $rg;
-    border-bottom: solid $ghost-white 1px;
-  }
-  
-  .nav-link:hover {
-    border-bottom: solid $half-white 1px;
-    color:$white;
-    transition: $transition;
-  }
+.navbar {
+  @include flex();
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+}
 
-  .navbar-dropdown {
-    display: flex;
-    position: absolute;
-    flex-direction: column;
-    background-color: $slate-ghost;
-    top: $xxl;
-    right: 0;
-    padding-right: 1rem;
-    border-radius: $radius;
-    z-index: 100;
+.navbar__toggle-btn {
+  opacity: 80%;
+}
+
+.navbar__desktop {
+  display: none;
+  justify-content: flex-end;
+}
+
+.navbar__link {
+  margin: 0 $rg;
+  border-bottom: solid $ghost-white 1px;
+}
+
+.navbar__link:hover {
+  border-bottom: solid $half-white 1px;
+  color:$white;
+  transition: $transition;
+}
+
+.navbar__dropdown {
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  background-color: $slate-ghost;
+  top: $xxl;
+  right: 0;
+  padding-right: 1rem;
+  border-radius: $radius;
+  z-index: 100;
+}
+
+.navbar__dropdown-home {
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  background-color: $night-sky-ghost;
+  top: $xxl;
+  right: 0;
+  padding-right: 1rem;
+  border-radius: $radius;
+  z-index: 100;
+  a {
+    color: $salmon;
   }
-  
-  .navbar-dropdown-home {
-    display: flex;
-    position: absolute;
-    flex-direction: column;
-    background-color: $night-sky-ghost;
-    top: $xxl;
-    right: 0;
-    padding-right: 1rem;
-    border-radius: $radius;
-    z-index: 100;
-    a {
-      color: $salmon;
-    }
+}
+
+.navbar__social-icons {
+  display: flex;
+  width: 10%;
+  z-index: 1;
+  padding-right: $xl;
+  i {
+    padding: 0 $sm;
   }
+}

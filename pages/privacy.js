@@ -1,13 +1,12 @@
-import Footer from "../components/footer";
-import Header from "../components/header";
+import Layout from '../pages/layout';
 
 const Privacy = () => {
 
     return (
-        <div className="container">
-            <Header pageTitle={'Privacy | Dan Groleau'}/>
-                <div className="content-box">
-                    <div className="privacy">
+        <Layout pageTitle={'Privacy | Dan Groleau'}>
+            <div className="container">
+                <div className="content__box">
+                    <div className="privacy__container">
                     <h3>Privacy Policy and Terms of Use</h3>
                     <h4>Privacy Policy</h4>
                     <p>
@@ -195,8 +194,8 @@ const Privacy = () => {
                     <a className="link return-home" href="/">Return to Home</a>
                     </div>
                 </div>
-            <Footer />
-        </div>
+            </div>
+        </Layout >
     )
 }
 

@@ -7,7 +7,7 @@ const Home = () => {
       <div className='home__container'>
         <div className="home__header">
           <div className="home__content">
-            <div>
+            <div className='home__brand'>
               <h1>Dan Groleau</h1>
               <img className="img__scale-index" src="./assets/index.svg"></img>
             </div>

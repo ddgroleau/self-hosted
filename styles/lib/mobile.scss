@@ -1,12 +1,6 @@
 @import './lib.scss';
 
 @media only screen and (min-width:1024px) {
-    .nav {
-      flex-direction: row;
-    }
-    .navbar__desktop{
-      @include flex();
-    }
     .navbar {
       justify-content: flex-start;
     }
@@ -16,10 +10,29 @@
     .navbar__toggle-btn{
       display: none;
     }
-    .about__content {
-      flex-direction: row;
-    }
+    
     .img__brand {
       min-width: $lg;
     }
+    .navbar__desktop{
+      @include flex();
+    }
+}
+
+@media only screen and (min-width:900px) {
+  .img__scale-index {
+    width: 30%;
+  }
+}
+
+@media only screen and (min-width:768px) {
+  .img__scale-index {
+    width: 40%;
+  }
+  .nav {
+    flex-direction: row;
+  }
+  .about__content {
+    flex-direction: row;
+  }
 }

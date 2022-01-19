@@ -42,3 +42,9 @@
     height: 30%;
     z-index: 1;
   }
+
+  .home__brand {
+    @include flexColumn();
+    @include centerBothAxis();
+    margin: 3rem 0;
+  }

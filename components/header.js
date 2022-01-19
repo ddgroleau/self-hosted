@@ -20,9 +20,12 @@ const Header = ({pageTitle}) => {
     };
     
   return (
-        <header>
+      <>
+        <head>
         <title>{pageTitle}</title>
-        <script src="https://kit.fontawesome.com/34584ec87f.js" crossorigin="anonymous"></script>
+            <script src="https://kit.fontawesome.com/34584ec87f.js" crossorigin="anonymous"></script>
+        </head>
+        <header>
             <div id="navbar" className="navbar">
                 <div className="navbar__social-icons">
                     <img href="https://github.com/ddgroleau" 
@@ -51,6 +54,7 @@ const Header = ({pageTitle}) => {
                     <a id="contact" className="link btn" href="/contact">Contact</a>
             </div>
         </header>
+      </>
   )}
 
 export default Header;

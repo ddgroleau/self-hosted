@@ -393,6 +393,9 @@ footer {
     flex-direction: row; }
 
   .about__content {
-    flex-direction: row; } }
+    flex-direction: row; }
+
+  .home__brand {
+    margin: 1rem 0; } }
 
 /*# sourceMappingURL=app.css.map */

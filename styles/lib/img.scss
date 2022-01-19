@@ -8,6 +8,10 @@
   width: 5rem;
 }
 
+.img__scale-index {
+  width: 20rem;
+}
+
 .img__hover:hover {
   transform: scale(125%);
   transition: $transition;

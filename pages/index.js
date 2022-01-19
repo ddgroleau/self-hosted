@@ -7,7 +7,10 @@ const Home = () => {
       <div className='home__container'>
         <div className="home__header">
           <div className="home__content">
+            <div>
               <h1>Dan Groleau</h1>
+              <img className="img__scale-index" src="./assets/index.svg"></img>
+            </div>
               <nav className="nav">
                 <a href="#about-anchor" className="home__link btn">
                   <i class="fas fa-user-circle"></i>

@@ -216,7 +216,7 @@ footer {
   width: 100%;
   flex-direction: column;
   height: 100%;
-  justify-content: space-evenly; }
+  justify-content: space-between; }
 
 .about__skill-icons {
   display: flex;
@@ -237,9 +237,29 @@ footer {
   width: 100%;
   flex-direction: column;
   justify-content: flex-start;
-  align-items: center;
+  align-items: flex-start;
   border: solid grey 1px;
-  max-width: 90%; }
+  border-radius: 5px;
+  max-width: 90%;
+  min-height: 20rem;
+  box-shadow: 0 0.1rem 0.1rem 0.1rem rgba(255, 255, 255, 0.15); }
+
+.about__card-content:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+  transition: all ease-in 0.2s; }
+
+.about__card-header {
+  width: 100%;
+  text-align: center;
+  margin: 1rem 0; }
+
+.about__card-subheader {
+  color: #CF5A61;
+  font-weight: 700;
+  margin-left: 1rem; }
+
+.about__card-items {
+  list-style-type: square; }
 
 .contact__container {
   width: 100%;
@@ -259,6 +279,9 @@ footer {
 
 .img__scale-lg {
   width: 5rem; }
+
+.img__scale-index {
+  width: 20rem; }
 
 .img__hover:hover {
   transform: scale(125%);

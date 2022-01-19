@@ -1,42 +1,24 @@
 import ReturnHomeLink from "./return-home-link";
+import AboutCard from "./about-card";
 
 const About = () => {
+    let frontendSkills = ["JavaScript","React","Blazor (.NET)","NextJS","Sass/SCSS","HTML5","CSS3"];
+    let backendSkills = ["C# (.NET)","TypeScript","PHP","NestJS","SQL/T-SQL", "SQL Server", "MySQL", "PostgreSQL", "MongoDB", "SQLite"];
+    let devopsSkills = ["Docker","Octopus Deploy", "Azure App Service","Team City","Heroku", "GitHub Actions"];
     return (
         <div id="about-anchor" className="about__container">
             <div className="about__skill-icons">
-                    <img className="img__scale-md img-hover" href="https://dotnet.microsoft.com/en-us/" src='./assets/csharp.svg'/>
-                    <img className="img__scale-md img-hover" href="https://reactjs.org/" src='./assets/reactjs.svg'/>
-                    <img className="img__scale-lg img-hover" href="https://nodejs.org/en/" src='./assets/nodejs.svg'/>
-                    <img className="img__scale-md img-hover" href="https://www.typescriptlang.org/" src='./assets/typescript.svg'/>
-                    <img className="img__scale-md img-hover" href="https://sass-lang.com/" src='./assets/sass.svg'/>
-                    <img className="img__scale-lg img-hover" href="https://www.php.net/" src='./assets/php.svg'/>
+                    <img className="img__scale-md img__hover" href="https://dotnet.microsoft.com/en-us/" src='./assets/csharp.svg'/>
+                    <img className="img__scale-md img__hover" href="https://reactjs.org/" src='./assets/reactjs.svg'/>
+                    <img className="img__scale-lg img__hover" href="https://nodejs.org/en/" src='./assets/nodejs.svg'/>
+                    <img className="img__scale-md img__hover" href="https://www.typescriptlang.org/" src='./assets/typescript.svg'/>
+                    <img className="img__scale-md img__hover" href="https://sass-lang.com/" src='./assets/sass.svg'/>
+                    <img className="img__scale-lg img__hover" href="https://www.php.net/" src='./assets/php.svg'/>
             </div>
             <div className="about__content">
-                <div className="about__card">
-                    <div className="about__card-content">
-                        <h4>Front-End</h4>
-                    </div>
-                </div>
-                <div className="about__card">
-                    <div className="about__card-content">
-                        <h4>Back-End</h4>
-                    </div>
-                </div>
-                <div className="about__card">
-                    <div className="about__card-content">
-                        <h4>DevOps</h4>
-                    </div>
-                </div>
-
-                {/* <p>
-                    I am a software engineer specializing in Web Development. I enjoy working in C#, JavaScript, PHP, HTML, CSS and SQL. 
-                I use NodeJs, React, NestJs, NextJs, Typescript, Blazor, ASP.NET and Sass/SCSS.
-                </p>
-                <p>
-                    I have experience working with MongoDb, 
-                SQL Server, MySQL, and PostgreSQL. I regularly use Docker, Octopus Deploy, and Azure and Team City products. I am
-                an advocate for test driven development, object-oriented programming and clean code principles.
-                </p> */}
+                <AboutCard header="Front End" subheader="Languages, Libraries & Frameworks" items={frontendSkills}/>
+                <AboutCard header="Back End" subheader="Languages and Technologies" items={backendSkills}/>
+                <AboutCard header="DevOps" subheader="CI/CD Toolsets" items={devopsSkills}/>
             </div>
             <ReturnHomeLink />
         </div>

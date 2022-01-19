@@ -1,3 +1,4 @@
+import ReturnHomeLink from '../components/return-home-link';
 import Layout from '../pages/layout';
 
 const Privacy = () => {
@@ -191,7 +192,7 @@ const Privacy = () => {
                     such subject matter. You hereby acknowledge (a) that You have read and understood these Terms, and (b) 
                     that these Terms have the same force and effect as a signed agreement.
                     </p>
-                    <a className="link return-home" href="/">Return to Home</a>
+                    <ReturnHomeLink />
                     </div>
                 </div>
             </div>

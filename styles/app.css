@@ -219,14 +219,14 @@ footer {
   align-items: center;
   padding: 1.5rem 0; }
 
-.about__content {
+.about__cards {
   display: flex;
   width: 100%;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100%;
-  justify-content: space-between; }
+  justify-content: center; }
 
 .about__skill-icons {
   display: flex;
@@ -275,6 +275,7 @@ footer {
   list-style-type: square; }
 
 .contact__container {
+  display: flex;
   width: 100%;
   height: 100%;
   padding: clamp(10%, 11%, 12%) 0; }
@@ -283,6 +284,7 @@ footer {
   display: flex;
   width: 100%;
   flex-direction: column;
+  max-width: min-content;
   justify-content: center;
   align-items: center;
   min-height: max-content; }
@@ -309,14 +311,24 @@ footer {
   transition: all ease-in 0.2s; }
 
 .form__item {
-  margin: 0.5%; }
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem 0; }
+  .form__item label {
+    width: 100%;
+    text-align: start;
+    margin: 0.5rem; }
 
 .form__textarea {
   height: 6rem; }
 
 .form__input {
   width: 20rem;
-  font-size: 1.25rem; }
+  font-size: 1.25rem;
+  margin: 0; }
 
 .form__submit {
   background-color: rgba(138, 79, 255, 0.5);
@@ -392,7 +404,7 @@ footer {
   .nav {
     flex-direction: row; }
 
-  .about__content {
+  .about__cards {
     flex-direction: row; }
 
   .home__brand {

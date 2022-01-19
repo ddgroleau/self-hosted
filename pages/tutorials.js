@@ -1,4 +1,5 @@
 import Layout from '../pages/layout';
+import ReturnHomeLink from '../components/return-home-link';
 
 const Tutorials = () => {
 
@@ -7,7 +8,7 @@ const Tutorials = () => {
             <Layout pageTitle={'Tutorials | Dan Groleau'}>
                 <div className="content__container">
                     <h3>Tutorials</h3>
-                    <a className="link return-home" href="/">Return to Home</a>
+                    <ReturnHomeLink/>
                 </div>
             </Layout>
         </div>

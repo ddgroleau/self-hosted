@@ -1,13 +1,14 @@
 @import './lib.scss';
 
 .contact__container {
-    width: 100%;
+  @include flex();
     height: 100%;
     padding: clamp(10%, 11%,12%) 0;
   }
 
   .contact__form {
     @include flexColumn();
+    max-width: min-content;
     @include centerBothAxis();
     min-height: max-content;
   }

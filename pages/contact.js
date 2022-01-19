@@ -17,16 +17,20 @@ const Contact = () => {
                             <h3>Contact</h3>
                         </div>
                         <div className="form__item">
-                            <input name="contactName" type="text" className="btn form__input" placeholder="Name" />
+                            <label for="contactName">Name</label>
+                            <input id="contactName" name="contactName" type="text" className="btn form__input" placeholder="Name" />
                         </div>
                         <div className="form__item">
-                            <input name="contactEmail" type="email"className="btn form__input" placeholder="Email" />
+                            <label for="contactEmail">Email</label>
+                            <input id="contactEmail" name="contactEmail" type="email"className="btn form__input" placeholder="Email" />
                         </div>
                         <div className="form__item">
-                            <input name="contactCompany" type="phone" className="btn form__input" placeholder="Company (Optional)" />
+                            <label for="contactCompany">Company</label>
+                            <input id="contactCompany" name="contactCompany" type="phone" className="btn form__input" placeholder="Company (Optional)" />
                         </div>
                         <div className="form__item">
-                            <textarea name="contactMessage" type="text" className="btn form__input  form__textarea" placeholder="Your message"></textarea>
+                            <label for="contactMessage">Email</label>
+                            <textarea id="contactMessage" name="contactMessage" type="text" className="btn form__input  form__textarea" placeholder="Your message"></textarea>
                         </div>
                         <div className="form__disclaimer">
                             <i>By submitting this from, you agree to our <a href="privacy">Privacy Policy and Terms of Use.</a></i>

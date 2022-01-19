@@ -1,7 +1,14 @@
 @import './lib.scss';
 
 .form__item {
-    margin: 0.5%;
+    @include flexColumn();
+    @include centerBothAxis();
+    margin: $rg 0;
+    label {
+      width: 100%;
+      text-align: start;
+      margin: $sm;
+    }
   }
   
   .form__textarea {
@@ -11,6 +18,7 @@
   .form__input {
     width: 20rem;
     font-size: $md-rg;
+    margin:0;
   }
   
   .form__submit {

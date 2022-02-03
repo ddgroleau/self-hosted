@@ -29,16 +29,13 @@ const Contact = () => {
     };
     const handleSubmit = async event => {
         event.preventDefault();
-        const response = await axios.post(
-            process.env.NEXT_PUBLIC_CONTACT_API,
-            JSON.stringify({
+        const response = await axios.post(process.env.NEXT_PUBLIC_CONTACT_API,{
                 contactName:contactName,
                 contactEmail:contactEmail,
                 contactCompany:contactCompany,
                 contactMessage:contactMessage
-            })
-            ).catch(()=>console.log("Failed to submit contact message."));
-        if (response.status === 200) {
+            }).catch(()=>console.log("Failed to submit contact message."));
+        if (response.status === 201) {
             console.log(response.data);
         }
     };

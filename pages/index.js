@@ -13,19 +13,19 @@ const Home = () => {
             </div>
               <nav className="nav">
                 <a href="#about-anchor" className="home__link btn">
-                  <i class="fas fa-user-circle"></i>
+                  <img src="./assets/about-me.svg" className='img__icon'></img>
                   <span>About Me</span>
                 </a>
-                <a href="/projects" className="home__link btn">
-                  <i class="fas fa-laptop-code"></i>
-                  <span>Projects</span>
+                <a href="/work" className="home__link btn">
+                  <img src="./assets/code.svg" className='img__icon'></img>
+                  <span>My Work</span>
                 </a>
-                <a href="/tutorials" className="home__link btn">
-                  <i class="fas fa-info-circle"></i>
-                  <span>Tutorials</span>
+                <a href="/services" className="home__link btn">
+                  <img src="./assets/info.svg" className='img__icon'></img>
+                  <span>Services</span>
                 </a>
                 <a href="/contact" className="home__link btn">
-                  <i class="fas fa-envelope-open-text"></i>
+                  <img src="./assets/contact.svg" className='img__icon'></img>
                   <span>Contact</span>
                 </a>
               </nav>

@@ -1,13 +1,14 @@
-import Layout from '../pages/layout';
+import Layout from './layout';
 import ReturnHomeLink from '../components/return-home-link';
 
-const Tutorials = () => {
+const Services = () => {
 
     return (
         <div className="container">
-            <Layout pageTitle={'Tutorials | Dan Groleau'}>
+            <Layout pageTitle={'Services | Dan Groleau'}>
                 <div className="content__container">
-                    <h3>Tutorials</h3>
+                    <h3>Services</h3>
+                    <h4><em>...Coming Soon</em></h4>
                     <ReturnHomeLink/>
                 </div>
             </Layout>
@@ -15,4 +16,4 @@ const Tutorials = () => {
     )
 }
 
-export default Tutorials;
+export default Services;

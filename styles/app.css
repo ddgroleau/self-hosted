@@ -303,12 +303,16 @@ footer {
   transition: all ease-in 0.2s; }
 
 .img__brand {
-  width: 3rem;
-  min-width: 20px; }
+  width: 1.5rem;
+  min-width: 10px; }
 
 .img__brand:hover {
   transform: scale(125%);
   transition: all ease-in 0.2s; }
+
+.img__icon {
+  padding: 0;
+  margin: 0; }
 
 .form__item {
   display: flex;

@@ -18,11 +18,16 @@
 }
 
 .img__brand {
-  width: $xxl;
-  min-width: 20px;
+  width: $md;
+  min-width: 10px;
 }
 
 .img__brand:hover {
   transform: scale(125%);
   transition: $transition;
+}
+
+.img__icon {
+  padding: 0;
+  margin: 0;
 }

@@ -1,6 +1,6 @@
-import Layout from '../pages/layout';
+import Layout from '../layout';
 import { useEffect, useState } from 'react';
-import ReturnHomeLink from '../components/return-home-link';
+import ReturnHomeLink from '../../components/return-home-link';
 import axios from 'axios';
 
 const Contact = () => {

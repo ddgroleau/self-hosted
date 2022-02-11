@@ -53,13 +53,6 @@ header {
   top: 0.5rem;
   z-index: 1; }
 
-footer {
-  font-size: 1rem;
-  position: fixed;
-  display: flex;
-  width: 100%;
-  bottom: 0.15rem; }
-
 .nav {
   display: flex;
   width: 100%;
@@ -123,6 +116,12 @@ footer {
   .navbar__social-icons i {
     padding: 0 0.5rem; }
 
+.navbar__details {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: flex-end; }
+
 .hidden {
   display: none; }
 
@@ -144,12 +143,25 @@ footer {
   text-decoration: none;
   color: #8A4FFF; }
 
+.link-sm {
+  font-size: 1rem;
+  text-decoration: none;
+  color: #8A4FFF; }
+
 .btn {
   border: solid grey 1px;
   border-radius: 5px;
   background-color: rgba(255, 255, 255, 0.1);
   padding: 0.5rem;
-  margin: 0.5rem 0.5rem; }
+  margin: 0.5rem; }
+
+.btn-sm {
+  border: solid grey 1px;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 0.25rem;
+  margin: 0.25rem;
+  width: 8rem; }
 
 .btn:hover {
   background-color: rgba(255, 255, 255, 0.5);
@@ -174,10 +186,10 @@ footer {
   display: flex;
   justify-content: space-between;
   font-size: 1.5rem;
-  min-width: 8rem;
+  width: 15rem;
   text-decoration: none;
   color: #fff;
-  font-size: 1.25rem; }
+  font-size: 2.5rem; }
 
 .home__header {
   display: flex;
@@ -207,7 +219,7 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 3rem 0; }
+  margin: 2rem 0; }
 
 .about__container {
   background-color: rgba(22, 22, 22, 0.75);
@@ -311,8 +323,9 @@ footer {
   transition: all ease-in 0.2s; }
 
 .img__icon {
-  padding: 0;
-  margin: 0; }
+  padding: 0 1rem 0 0;
+  margin: 0;
+  width: 3rem; }
 
 .form__item {
   display: flex;
@@ -370,19 +383,30 @@ footer {
   max-width: 90%;
   margin-bottom: 25%; }
 
+footer {
+  font-size: 0.75rem;
+  position: relative;
+  bottom: 0;
+  width: 98vw; }
+
 .footer__content {
   display: flex;
-  width: 100%;
   justify-content: space-between;
-  padding: 0 0.5rem;
+  background-color: rgba(22, 22, 22, 0.75);
+  padding: 0.5rem;
   color: #8A4FFF;
-  font-size: 0.75rem; }
+  width: 100%;
+  max-height: 1rem; }
   .footer__content .footer__privacy {
     font-size: 0.75rem;
     text-decoration: none;
-    color: #8A4FFF; }
+    color: #8A4FFF;
+    margin-left: 10%; }
 
 @media only screen and (min-width: 1024px) {
+  h1 {
+    font-size: 5rem; }
+
   .navbar {
     justify-content: flex-start; }
 
@@ -403,7 +427,7 @@ footer {
     width: 30%; } }
 @media only screen and (min-width: 768px) {
   .img__scale-index {
-    width: 40%; }
+    width: 30%; }
 
   .nav {
     flex-direction: row; }

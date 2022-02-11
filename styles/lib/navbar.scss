@@ -69,3 +69,8 @@
     padding: 0 $sm;
   }
 }
+
+.navbar__details {
+  @include flexColumn();
+  align-items: flex-end;
+}

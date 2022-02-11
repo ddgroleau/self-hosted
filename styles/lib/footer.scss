@@ -1,14 +1,24 @@
 @import './lib.scss';
 
-.footer__content {
-  @include flex();
-  justify-content: space-between;
-  padding: 0 $sm;
-  color: $purple;
+footer {
   font-size: $sm-rg;
+  position: relative;
+  bottom: 0;
+  width: 98vw;
+}
+
+.footer__content {
+  display: flex;
+  justify-content: space-between;
+  background-color: $slate-ghost;
+  padding: $sm;
+  color: $purple;
+  width: 100%;
+  max-height: $rg;
   .footer__privacy {
     font-size: $sm-rg;
     text-decoration: none;
     color: $purple;
+    margin-left: 10%;
   }
 }

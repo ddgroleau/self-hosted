@@ -1,6 +1,9 @@
 @import './lib.scss';
 
 @media only screen and (min-width:1024px) {
+    h1 {
+      font-size: 5rem;
+    }
     .navbar {
       justify-content: flex-start;
     }
@@ -27,7 +30,7 @@
 
 @media only screen and (min-width:768px) {
   .img__scale-index {
-    width: 40%;
+    width: 30%;
   }
   .nav {
     flex-direction: row;

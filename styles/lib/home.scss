@@ -1,50 +1,44 @@
-@import './lib.scss';
-
 .home__container {
-    padding: 0;
-    margin: 0;
-    height: 100%;
-    width: 100%;
-    background-image: url('../public/assets/night.jpg');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: cover;
-    background-size: cover;
-    overflow-x: hidden;
-    position: relative;
-    z-index: 0;
-  }
-
-  .home__link {
-    display: flex;
-    justify-content: space-between;
-    font-size: $md;
-    width: 15rem;
-    text-decoration: none;
-    color: $white;
-    font-size: $xl;
-  }
-
-  .home__header {
     @include flexColumn();
-    @include centerBothAxis();
-    height: 100%;
+    height: auto;
     min-height: 100vh;
-    min-width: 100vw;
-    padding-bottom: $xxl;
-  }
-  
-  .home__content{
-    position: relative;
-    @include flexColumn();
-    @include centerBothAxis();
-    text-align: center;
-    height: 30%;
-    z-index: 1;
-  }
+    padding-top: 15%;
+    align-items: center;
+    justify-content: flex-start;
+}
 
-  .home__brand {
-    @include flexColumn();
+.home__brand {
+    @include flexColumn;
+    max-width: fit-content;
+    height: 50%;
+    width: 100%;
+    h1 {
+        font-weight: 300;
+        text-align: center;
+        color: $purple;
+        font-size: xxl;
+        margin-left: clamp(-5%,-2rem,0);
+    }
+    em {
+        margin-top: $sm;
+        text-align: center;
+        font-size: $rg;
+    }
+}
+
+.home__brand-logo {
+    @include flex;
     @include centerBothAxis();
-    margin: 2rem 0;
-  }
+}
+.home__content {
+    @include flexColumn();
+    height: auto;
+    padding:$md $rg;
+    @include centerBothAxis();
+}
+
+.home__article-container {
+    @include flex();
+    flex-wrap: wrap;
+    justify-content: center;
+}

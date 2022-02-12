@@ -21,9 +21,7 @@ const Navbar = ({pageTitle}) => {
     
   return (
       <>
-        <head>
-            <title>{pageTitle}</title>
-        </head>
+        <title>{pageTitle}</title>
         <header>
             <div id="navbar" className="navbar">
                 <div className="navbar__social-icons">

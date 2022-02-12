@@ -34,8 +34,7 @@
 }
 
 .navbar__link-active {
-  border-bottom: solid $half-white 1px;
-  color:$white;
+  color:$white !important;
 }
 
 .navbar__dropdown {
@@ -93,6 +92,12 @@
 
 .navbar__summary {
   font-size: $md;
-  text-decoration: none;
   color:$purple;
+  border-bottom: solid $ghost-white 1px;
+}
+
+.navbar__summary:hover {
+  border-bottom: solid $half-white 1px;
+  color:$white;
+  transition: $transition;
 }

@@ -1,16 +1,16 @@
-@import url("https://fonts.googleapis.com/css2?family=Recursive:ital,wght@0,400;0,700;1,400&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Recursive:ital,wght@0,400;0,700;1,400&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Recursive:ital,wght@0,400;0,700;1,400&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Recursive:ital,wght@0,400;0,700;1,400&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Recursive:ital,wght@0,400;0,700;1,400&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Recursive:ital,wght@0,400;0,700;1,400&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Recursive:ital,wght@0,400;0,700;1,400&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Recursive:ital,wght@0,400;0,700;1,400&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Recursive:ital,wght@0,400;0,700;1,400&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Recursive:ital,wght@0,400;0,700;1,400&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Recursive:ital,wght@0,400;0,700;1,400&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Recursive:ital,wght@0,400;0,700;1,400&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Recursive:ital,wght@0,400;0,700;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Recursive:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Recursive:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Recursive:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Recursive:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Recursive:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Recursive:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Recursive:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Recursive:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Recursive:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Recursive:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Recursive:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Recursive:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Recursive:wght@300;400;500;600;700&display=swap");
 body, html {
   height: 100%; }
 
@@ -25,7 +25,7 @@ body {
   color: #fff; }
 
 h1 {
-  font-size: 3rem; }
+  font-size: 4rem; }
 
 h2 {
   font-size: 2.5rem; }
@@ -87,8 +87,7 @@ header {
   transition: all ease-in 0.2s; }
 
 .navbar__link-active {
-  border-bottom: solid rgba(255, 255, 255, 0.5) 1px;
-  color: #fff; }
+  color: #fff !important; }
 
 .navbar__dropdown {
   display: flex;
@@ -141,8 +140,13 @@ header {
 
 .navbar__summary {
   font-size: 1.5rem;
-  text-decoration: none;
-  color: #8A4FFF; }
+  color: #8A4FFF;
+  border-bottom: solid rgba(255, 255, 255, 0.1) 1px; }
+
+.navbar__summary:hover {
+  border-bottom: solid rgba(255, 255, 255, 0.5) 1px;
+  color: #fff;
+  transition: all ease-in 0.2s; }
 
 .hidden {
   display: none; }
@@ -186,7 +190,7 @@ header {
   margin: 0.25rem;
   width: 8rem; }
 
-.btn:hover {
+.btn:hover, .btn-sm:hover {
   background-color: rgba(255, 255, 255, 0.5);
   color: #fff;
   transition: all ease-in 0.2s; }
@@ -200,7 +204,7 @@ header {
     opacity: 0; }
   100% {
     opacity: 1; } }
-.home__container {
+.about-me__container {
   padding: 0;
   margin: 0;
   height: 100%;
@@ -214,7 +218,7 @@ header {
   position: relative;
   z-index: 0; }
 
-.home__link {
+.about-me__link {
   display: flex;
   justify-content: space-between;
   font-size: 1.5rem;
@@ -223,18 +227,15 @@ header {
   color: #fff;
   font-size: 2.5rem; }
 
-.home__header {
+.about-me__header {
   display: flex;
   width: 100%;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100%;
-  min-height: 100vh;
-  min-width: 100vw;
   padding-bottom: 3rem; }
 
-.home__content {
+.about-me__content {
   position: relative;
   display: flex;
   width: 100%;
@@ -242,16 +243,67 @@ header {
   justify-content: center;
   align-items: center;
   text-align: center;
-  height: 30%;
+  height: 40%;
   z-index: 1; }
 
-.home__brand {
+.about-me__brand {
   display: flex;
   width: 100%;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   margin: 2rem 0; }
+  .about-me__brand h1 {
+    font-weight: 300; }
+
+.home__container {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  height: auto;
+  min-height: 100vh;
+  padding-top: 15%;
+  align-items: center;
+  justify-content: flex-start; }
+
+.home__brand {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  max-width: fit-content;
+  height: 50%;
+  width: 100%; }
+  .home__brand h1 {
+    font-weight: 300;
+    text-align: center;
+    color: #8A4FFF;
+    font-size: xxl;
+    margin-left: clamp(-5%, -2rem, 0); }
+  .home__brand em {
+    margin-top: 0.5rem;
+    text-align: center;
+    font-size: 1rem; }
+
+.home__brand-logo {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center; }
+
+.home__content {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  height: auto;
+  padding: 1.5rem 1rem;
+  justify-content: center;
+  align-items: center; }
+
+.home__article-container {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center; }
 
 .about__container {
   background-color: rgba(22, 22, 22, 0.75);
@@ -361,6 +413,14 @@ header {
   padding: 0 1rem 0 0;
   margin: 0;
   width: 3rem; }
+
+.article__container {
+  flex: 0 0 40%;
+  min-height: 10rem;
+  border: solid grey 1px;
+  border-radius: 5px;
+  padding: 0.5rem;
+  margin: 0.5rem; }
 
 .form__item {
   display: flex;

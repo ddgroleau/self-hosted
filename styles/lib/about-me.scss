@@ -1,0 +1,50 @@
+@import './lib.scss';
+
+.about-me__container {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    background-image: url('../public/assets/night.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: cover;
+    background-size: cover;
+    overflow-x: hidden;
+    position: relative;
+    z-index: 0;
+  }
+
+  .about-me__link {
+    display: flex;
+    justify-content: space-between;
+    font-size: $md;
+    width: 15rem;
+    text-decoration: none;
+    color: $white;
+    font-size: $xl;
+  }
+
+  .about-me__header {
+    @include flexColumn();
+    @include centerBothAxis();
+    padding-bottom: $xxl;
+  }
+  
+  .about-me__content{
+    position: relative;
+    @include flexColumn();
+    @include centerBothAxis();
+    text-align: center;
+    height: 40%;
+    z-index: 1;
+  }
+
+  .about-me__brand {
+    @include flexColumn();
+    @include centerBothAxis();
+    margin: 2rem 0;
+    h1 {
+      font-weight: 300;
+    }
+  }

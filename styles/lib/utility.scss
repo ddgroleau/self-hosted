@@ -45,7 +45,7 @@
   width: 8rem;
 }
 
-.btn:hover {
+.btn:hover, .btn-sm:hover {
   background-color: $half-white;
   color: #fff;
   transition: $transition;

@@ -21,12 +21,27 @@
   color:$purple;
 }
 
+.link-sm {
+  font-size: $rg;
+  text-decoration: none;
+  color:$purple;
+}
+
 .btn {
   border: $box-border;
   border-radius: $radius;
   background-color: $ghost-white;
   padding: $sm;
-  margin: $sm $sm;
+  margin: $sm;
+}
+
+.btn-sm {
+  border: $box-border;
+  border-radius: $radius;
+  background-color: $ghost-white;
+  padding: $xs;
+  margin: $xs;
+  width: 8rem;
 }
 
 .btn:hover {

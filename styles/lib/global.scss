@@ -49,10 +49,3 @@ body, html {
     top: $sm;
     z-index: 1;
   }
-  
-  footer {
-      font-size: $rg;
-      position: fixed;
-      @include flex();
-      bottom: $xxs;
-  }

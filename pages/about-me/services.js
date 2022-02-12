@@ -1,10 +1,9 @@
-import Layout from './layout';
-import ReturnHomeLink from '../components/return-home-link';
+import Layout from '../layout';
+import ReturnHomeLink from '../../components/return-home-link';
 
 const Services = () => {
 
     return (
-        <div className="container">
             <Layout pageTitle={'Services | Dan Groleau'}>
                 <div className="content__container">
                     <h3>Services</h3>
@@ -12,7 +11,6 @@ const Services = () => {
                     <ReturnHomeLink/>
                 </div>
             </Layout>
-        </div>
     )
 }
 

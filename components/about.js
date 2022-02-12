@@ -3,8 +3,8 @@ import AboutCard from "./about-card";
 
 const About = () => {
     let frontendSkills = ["JavaScript","React","Blazor (.NET)","NextJS","Sass/SCSS","HTML5","CSS3", "WordPress"];
-    let backendSkills = ["C# (.NET)","TypeScript","PHP","NestJS","SQL/T-SQL", "Bash/Shell","SQL Server", "MySQL", "PostgreSQL", "MongoDB", "SQLite"];
-    let devopsSkills = ["Docker","Octopus Deploy", "Azure App Service","Team City","Heroku", "GitHub Actions"];
+    let backendSkills = ["C# (.NET)","TypeScript","PHP","NestJS","SQL/T-SQL", "Bash/Shell","Relational Databases","Non-Relational/NoSQL Databases","In-Memory Storage"];
+    let devopsSkills = ["Docker","Octopus Deploy", "Azure App Service","Team City","Heroku", "GitLab", "GitHub Actions"];
     return (
         <div id="about-anchor" className="about__container">
             <div className="about__skill-icons">
@@ -15,7 +15,7 @@ const About = () => {
                     <img className="img__scale-md img__hover" href="https://sass-lang.com/" src='./assets/sass.svg'/>
                     <img className="img__scale-lg img__hover" href="https://www.php.net/" src='./assets/php.svg'/>
             </div>
-            <p>
+            <p className="about__description">
                 Full-Stack Software Engineer specializing in Web Development.
             </p>
             <div className="about__cards">

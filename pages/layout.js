@@ -1,11 +1,11 @@
-import Header from "../components/header"
+import Navbar from "../components/navbar"
 import Footer from "../components/footer"
 
 const Layout = ({ children, pageTitle } ) => {
 
     return (
         <>
-        <Header pageTitle={pageTitle}/>
+        <Navbar pageTitle={pageTitle}/>
             <main>{children}</main>
         <Footer/>
         </>

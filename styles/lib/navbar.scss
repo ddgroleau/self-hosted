@@ -23,7 +23,7 @@
 }
 
 .navbar__link {
-  margin: 0 $rg;
+  margin: 0 $md;
   border-bottom: solid $ghost-white 1px;
 }
 
@@ -31,6 +31,11 @@
   border-bottom: solid $half-white 1px;
   color:$white;
   transition: $transition;
+}
+
+.navbar__link-active {
+  border-bottom: solid $half-white 1px;
+  color:$white;
 }
 
 .navbar__dropdown {
@@ -42,7 +47,7 @@
   right: 0;
   padding-right: 1rem;
   border-radius: $radius;
-  z-index: 100;
+  z-index: 1;
 }
 
 .navbar__dropdown-home {
@@ -54,7 +59,7 @@
   right: 0;
   padding-right: 1rem;
   border-radius: $radius;
-  z-index: 100;
+  z-index: 1;
   a {
     color: $salmon;
   }
@@ -73,4 +78,21 @@
 .navbar__details {
   @include flexColumn();
   align-items: flex-end;
+}
+
+.navbar__details-desktop {
+  position: absolute;
+  @include flexColumn();
+  padding: $sm;
+  text-decoration: none;
+  color:$purple;
+  .link {
+    font-size: $md-rg;
+  }
+}
+
+.navbar__summary {
+  font-size: $md;
+  text-decoration: none;
+  color:$purple;
 }

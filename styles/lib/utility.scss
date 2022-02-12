@@ -13,6 +13,7 @@
   @include flexColumn();
   @include centerBothAxis();
   height: 100%;
+  margin-top: 10%;
 }
 
 .link {
@@ -48,6 +49,11 @@
   background-color: $half-white;
   color: #fff;
   transition: $transition;
+}
+
+.btn-active {
+  background-color: $half-white;
+  color: #fff;
 }
 
 @keyframes fadeIn {

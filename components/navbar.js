@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-const Header = ({pageTitle}) => {
+const Navbar = ({pageTitle}) => {
     const [isToggled, setIsToggled] = useState(true);
     const [navbarDropdownClass, setNavbarDropDownClass] = useState('hidden');
     let navDesktop = 'navbar__desktop';
@@ -11,7 +11,7 @@ const Header = ({pageTitle}) => {
         navDesktop="hidden";
         btnClass="hidden";
         navbarDropdown = 'navbar__dropdown-home';
-        }
+    }
 
 
     const toggleNav = () => {
@@ -38,23 +38,29 @@ const Header = ({pageTitle}) => {
                         className="img__brand" src='/assets/twitter.svg'></img></a>
                 </div>
                 <nav id="navbar__desktop" className={navDesktop}>
-                    <a className="link navbar__link"  href="/">Home</a>
-                    <a className="link navbar__link" href="/about-me">About Me</a>
-                    <a className="link navbar__link" href="/about-me/work">My Work</a>
-                    <a className="link navbar__link" href="/about-me/services">Services</a>
-                    <a className="link navbar__link" href="/about-me/contact">Contact</a>
+                    <a className={`link navbar__link ${pageTitle.includes('Home') ? 'navbar__link-active':''}`}   href="/">Home</a>
+                    <details>
+
+                    <summary className={`navbar__summary ${pageTitle.includes('Home') ? '':'navbar__link-active'}`}>About Me</summary>
+                        <div className="navbar__details-desktop">
+                            <a className={`link navbar__link ${pageTitle.includes('About') ? 'navbar__link-active':''}`} href="/about-me">About Me</a>
+                            <a className={`link navbar__link ${pageTitle.includes('Work') ? 'navbar__link-active':''}`} href="/about-me/work">My Work</a>
+                            <a className={`link navbar__link ${pageTitle.includes('Services') ? 'navbar__link-active':''}`} href="/about-me/services">Services</a>
+                            <a className={`link navbar__link ${pageTitle.includes('Contact') ? 'navbar__link-active':''}`} href="/about-me/contact">Contact</a>
+                        </div>
+                    </details>
                 </nav>
-                <img id="navbar__toggle-btn" className="navbar__toggle-btn" src="./assets/navbar-toggler.svg" onClick={toggleNav} />
+                <img id="navbar__toggle-btn" className="navbar__toggle-btn" src="/assets/navbar-toggler.svg" onClick={toggleNav} />
             </div>
             <div id="navbar__dropdown" className={navbarDropdownClass}>
-                    <a id="home" className="link btn" href="/">Home</a>
+                    <a id="home" className={`link btn ${pageTitle.includes('Home') ? 'btn-active':''}`} href="/">Home</a>
                     <details>
-                     <summary className="link btn">About Me</summary>
-                         <div class="navbar__details">
-                            <a id="about-me" className="link-sm btn-sm" href="/about-me">About Me</a>
-                            <a id="work" className="link-sm btn-sm" href="/about-me/work">My Work</a>
-                            <a id="services" className="link-sm btn-sm " href="/about-me/services">Services</a>
-                            <a id="contact" className="link-sm btn-sm" href="/about-me/contact">Contact</a>
+                     <summary className={`link btn ${pageTitle.includes('Home') ? '':'btn-active'}`}>About Me</summary>
+                         <div className="navbar__details">
+                            <a id="about-me" className={`link-sm btn-sm ${pageTitle.includes('About') ? 'btn-active':''}`} href="/about-me">About Me</a>
+                            <a id="work"     className={`link-sm btn-sm ${pageTitle.includes('Work') ? 'btn-active':''}`}href="/about-me/work">My Work</a>
+                            <a id="services" className={`link-sm btn-sm ${pageTitle.includes('Services') ? 'btn-active':''}`}href="/about-me/services">Services</a>
+                            <a id="contact"  className={`link-sm btn-sm ${pageTitle.includes('Contact') ? 'btn-active':''}`}href="/about-me/contact">Contact</a>
                         </div>
                     </details>
             </div>
@@ -62,4 +68,4 @@ const Header = ({pageTitle}) => {
       </>
   )}
 
-export default Header;
+export default Navbar;

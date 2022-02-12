@@ -9,12 +9,6 @@ const Contact = () => {
     const [contactCompany,setContactCompany] = useState("");
     const [contactMessage,setContactMessage] = useState("");
 
-    useEffect(() => {
-        if (typeof window !== "undefined") {
-            document.getElementById("contact").style="display:none";
-        }
-    });
-
     const handleNameChange = event => {
         setContactName(event.target.value)
     };
@@ -43,26 +37,25 @@ const Contact = () => {
     return (
         <Layout pageTitle={'Contact | Dan Groleau'} >
             <div className="contact__container">
-                <div className="content__container">
                     <form onSubmit={handleSubmit} className="contact__form">
-                        <div className="form__item">
+                        <div className='form__body'>
                             <h3>Contact</h3>
-                        </div>
-                        <div className="form__item">
-                            <label htmlFor="contactName">Name</label>
-                            <input id="contactName" value={contactName} onChange={handleNameChange} type="text" className="btn form__input" placeholder="Name" />
-                        </div>
-                        <div className="form__item">
-                            <label htmlFor="contactEmail">Email</label>
-                            <input id="contactEmail" value={contactEmail} onChange={handleEmailChange} type="email"className="btn form__input" placeholder="Email" />
-                        </div>
-                        <div className="form__item">
-                            <label htmlFor="contactCompany">Company</label>
-                            <input id="contactCompany" value={contactCompany} onChange={handleCompanyChange} type="phone" className="btn form__input" placeholder="Company (Optional)" />
-                        </div>
-                        <div className="form__item">
-                            <label htmlFor="contactMessage">Email</label>
-                            <textarea id="contactMessage" value={contactMessage} onChange={handleMessageChange} type="text" className="btn form__input  form__textarea" placeholder="Your message"></textarea>
+                            <div className="form__item">
+                                <label htmlFor="contactName">Name</label>
+                                <input id="contactName" value={contactName} onChange={handleNameChange} type="text" className="btn form__input" placeholder="Name" />
+                            </div>
+                            <div className="form__item">
+                                <label htmlFor="contactEmail">Email</label>
+                                <input id="contactEmail" value={contactEmail} onChange={handleEmailChange} type="email"className="btn form__input" placeholder="Email" />
+                            </div>
+                            <div className="form__item">
+                                <label htmlFor="contactCompany">Company</label>
+                                <input id="contactCompany" value={contactCompany} onChange={handleCompanyChange} type="phone" className="btn form__input" placeholder="Company (Optional)" />
+                            </div>
+                            <div className="form__item">
+                                <label htmlFor="contactMessage">Email</label>
+                                <textarea id="contactMessage" value={contactMessage} onChange={handleMessageChange} type="text" className="btn form__input  form__textarea" placeholder="Your message"></textarea>
+                            </div>
                         </div>
                         <div className="form__disclaimer">
                             <i>By submitting this from, you agree to our <a href="privacy">Privacy Policy and Terms of Use.</a></i>
@@ -72,7 +65,6 @@ const Contact = () => {
                         </div>
                     </form>
                     <ReturnHomeLink/>
-                </div>
             </div>
         </Layout>
     );

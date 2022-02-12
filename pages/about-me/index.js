@@ -10,7 +10,7 @@ const AboutMe = () => {
           <div className="home__content">
             <div className='home__brand'>
               <h1>Dan Groleau</h1>
-              <img className="img__scale-index" src="./assets/index.svg"></img>
+              <img className="img__scale-index" src="/assets/index.svg"></img>
             </div>
               <nav className="nav">
                 <a href="/about-me/work" className="home__link btn">

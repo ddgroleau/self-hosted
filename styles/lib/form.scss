@@ -3,20 +3,30 @@
 .form__item {
     @include flexColumn();
     @include centerBothAxis();
-    margin: $rg 0;
+    width: 100%;
+    margin-bottom: $sm;
     label {
-      width: 100%;
       text-align: start;
-      margin: $sm;
+      width: 100%;
+      padding: $sm;
+      margin-right: $rg;
     }
   }
   
+  .form__body {
+    padding: 10% 0;
+    h3 {
+      width: 100%;
+      text-align: center;
+    }
+  }
+
   .form__textarea {
     height: 6rem;
   }
   
   .form__input {
-    width: 20rem;
+    width: 100%;
     font-size: $md-rg;
     margin:0;
   }

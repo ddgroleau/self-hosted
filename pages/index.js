@@ -7,14 +7,17 @@ const Home = () => {
       <div className="home__container">
         <div className="home__brand">
           <div className='home__brand-logo'>
-        <img className="img__scale-index" src="/assets/logo.svg"></img>
-            <h1>Self-Hosted</h1>
-
+            <img className="img__scale-index" src="/assets/logo.svg" alt="Self-Hosted Logo"></img>
           </div>
+          <div className='home__title'>
+            <h1>Self-Hosted</h1>
             <em>Tutorials and guides for the self-taught programmer.</em>
+          </div>
         </div>
         <div className='home__content'>
-          <h4>Featured Content</h4>
+          <div className='home__content-title'>
+            <h4>Featured Content</h4>
+          </div>
           <div className='home__article-container'>
             <Article />
             <Article />

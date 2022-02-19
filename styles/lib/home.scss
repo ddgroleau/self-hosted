@@ -1,15 +1,16 @@
+@import './lib.scss';
+
 .home__container {
     @include flexColumn();
-    height: auto;
-    min-height: 100vh;
-    padding-top: 15%;
     align-items: center;
+    min-height: 100vh;
+    padding-top: 5rem;
     justify-content: flex-start;
 }
 
 .home__brand {
-    @include flexColumn;
-    max-width: fit-content;
+    @include flexColumn();
+    align-items: center;
     height: 50%;
     width: 100%;
     h1 {
@@ -17,7 +18,7 @@
         text-align: center;
         color: $purple;
         font-size: xxl;
-        margin-left: clamp(-5%,-2rem,0);
+        margin:0;
     }
     em {
         margin-top: $sm;
@@ -29,16 +30,96 @@
 .home__brand-logo {
     @include flex;
     @include centerBothAxis();
+    img {
+        width: 100%;
+        object-fit: cover;
+        min-width: 10rem;
+        max-width: 13rem;
+    }
 }
+
+.home__title {
+    @include flexColumn();
+}
+
 .home__content {
     @include flexColumn();
     height: auto;
-    padding:$md $rg;
+    padding:$xxl $rg;
     @include centerBothAxis();
+    h4 {
+        margin: 0;
+        margin-right: auto
+    }
 }
 
 .home__article-container {
     @include flex();
     flex-wrap: wrap;
     justify-content: center;
+}
+
+@media (min-width: 600px) {
+    .home__brand {
+       flex-flow: row nowrap;
+       width: 80%;
+    }
+    .home__brand-logo {
+        max-width: 10rem;
+        padding-right: 1rem;
+    }
+    .home__title {
+        margin-right: 1rem;
+        h1 {
+            min-width: max-content;
+        }
+    }
+}
+
+@media (min-width: 800px) {
+    .home__brand-logo {
+        max-width: 14rem;
+    }
+    .home__brand {
+        max-width: 44rem;
+    }
+    .home__title {
+        em {
+            font-size: $md;
+        }
+    }
+}
+
+@media (min-width: 1000px) {
+    .home__brand-logo {
+        width: 22rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    .home__brand-logo {
+        width: 28rem;
+    }
+    .home__content-title {
+        width: 100%;
+        padding-left: 17%;
+    }
+}
+
+@media (min-width: 1600px) {
+    .home__brand {
+        min-width: 80%;
+        margin-left: 20%;
+    }
+    .home__title {
+        display: inline-flex;
+        flex-direction: row;
+        em {
+            max-width: 27rem;
+            max-height: 6rem;
+            margin-left: 7rem;
+            font-size: $lg;
+            line-height: $xxl;
+        }
+    }
 }

@@ -1,0 +1,13 @@
+version: '3.7'
+
+services:
+    self-hosted:
+        image: self-hosted
+        build:
+            context: .
+            dockerfile: ./Dockerfile
+        command: yarn start
+        ports:
+            - 3000:3000
+        volumes:
+            - .:/app/node_modules

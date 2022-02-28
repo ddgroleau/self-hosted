@@ -1,5 +1,5 @@
 {
-  "name": "dan-site",
+  "name": "self-hosted",
   "private": true,
   "scripts": {
     "dev": "next dev",

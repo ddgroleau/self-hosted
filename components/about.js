@@ -8,12 +8,12 @@ const About = () => {
     return (
         <div id="about-anchor" className="about__container">
             <div className="about__skill-icons">
-                    <img className="img__scale-md img__hover" href="https://dotnet.microsoft.com/en-us/" src='./assets/csharp.svg'/>
-                    <img className="img__scale-md img__hover" href="https://reactjs.org/" src='./assets/reactjs.svg'/>
-                    <img className="img__scale-lg img__hover" href="https://nodejs.org/en/" src='./assets/nodejs.svg'/>
-                    <img className="img__scale-md img__hover" href="https://www.typescriptlang.org/" src='./assets/typescript.svg'/>
-                    <img className="img__scale-md img__hover" href="https://sass-lang.com/" src='./assets/sass.svg'/>
-                    <img className="img__scale-lg img__hover" href="https://www.php.net/" src='./assets/php.svg'/>
+                    <img alt="CSharp Logo" className="img__scale-md img__hover" href="https://dotnet.microsoft.com/en-us/" src='./assets/csharp.svg'/>
+                    <img alt="React Logo" className="img__scale-md img__hover" href="https://reactjs.org/" src='./assets/reactjs.svg'/>
+                    <img alt="NodeJs Logo" className="img__scale-lg img__hover" href="https://nodejs.org/en/" src='./assets/nodejs.svg'/>
+                    <img alt="Typescript Logo" className="img__scale-md img__hover" href="https://www.typescriptlang.org/" src='./assets/typescript.svg'/>
+                    <img alt="Sass Logo" className="img__scale-md img__hover" href="https://sass-lang.com/" src='./assets/sass.svg'/>
+                    <img alt="PHP Logo" className="img__scale-lg img__hover" href="https://www.php.net/" src='./assets/php.svg'/>
             </div>
             <p className="about__description">
                 Full-Stack Software Engineer specializing in Web Development.

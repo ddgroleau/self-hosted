@@ -16,9 +16,11 @@ footer {
   width: 100%;
   max-height: $rg;
   .footer__privacy {
-    font-size: $sm-rg;
-    text-decoration: none;
-    color: $purple;
-    margin-left: 10%;
+    a {
+      font-size: $sm-rg;
+      text-decoration: none;
+      color: $purple;
+      margin-left: 10%;
+    }
   }
 }

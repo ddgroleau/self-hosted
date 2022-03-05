@@ -23,6 +23,7 @@ const Contact = () => {
     };
     const handleSubmit = async event => {
         event.preventDefault();
+        console.log(process.env.NEXT_PUBLIC_CONTACT_API);
         const response = await axios.post(process.env.NEXT_PUBLIC_CONTACT_API,{
                 contactName:contactName,
                 contactEmail:contactEmail,

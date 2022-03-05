@@ -22,15 +22,27 @@
   justify-content: flex-end;
 }
 
+@mixin navbarLink {
+  font-size: $md;
+  text-decoration: none;
+  color:$purple;
+}
+
 .navbar__link {
-  margin: 0 $md;
-  border-bottom: solid $ghost-white 1px;
+@include navbarLink();
+  a {
+    @include navbarLink();
+    border-bottom: solid $ghost-white 1px;
+    margin: 0 $md;
+  }
 }
 
 .navbar__link:hover {
-  border-bottom: solid $half-white 1px;
   color:$white;
   transition: $transition;
+  a {
+    border-bottom: solid $half-white 1px;
+  }
 }
 
 .navbar__link-active {

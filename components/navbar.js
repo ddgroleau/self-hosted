@@ -51,29 +51,49 @@ const Navbar = ({pageTitle=""}) => {
                     </Link>
                 </div>
                 <nav id="navbar__desktop" className={navDesktop}>
-                    <Link className={`link navbar__link ${pageTitle.includes('Home') ? 'navbar__link-active':''}`}   href="/">Home</Link>
+                    <div className={`link navbar__link ${pageTitle.includes('Home') ? 'navbar__link-active':''}`} >
+                        <Link href="/">Home</Link>
+                    </div>
                     <details>
 
                     <summary className={`navbar__summary ${pageTitle.includes('Home') ? '':'navbar__link-active'}`}>About Me</summary>
                         <div className="navbar__details-desktop">
-                            <Link className={`link navbar__link ${pageTitle.includes('About') ? 'navbar__link-active':''}`} href="/about-me">About Me</Link>
-                            <Link className={`link navbar__link ${pageTitle.includes('Work') ? 'navbar__link-active':''}`} href="/about-me/work">My Work</Link>
-                            <Link className={`link navbar__link ${pageTitle.includes('Services') ? 'navbar__link-active':''}`} href="/about-me/services">Services</Link>
-                            <Link className={`link navbar__link ${pageTitle.includes('Contact') ? 'navbar__link-active':''}`} href="/about-me/contact">Contact</Link>
+                            <div className={`link navbar__link ${pageTitle.includes('About') ? 'navbar__link-active':''}`}>
+                                <Link  href="/about-me">About Me</Link>
+                            </div>
+                            <div className={`link navbar__link ${pageTitle.includes('Work') ? 'navbar__link-active':''}`} >
+                                <Link href="/about-me/work">My Work</Link>
+                            </div>
+                            <div className={`link navbar__link ${pageTitle.includes('Services') ? 'navbar__link-active':''}`} >
+                                <Link href="/about-me/services">Services</Link>
+                            </div>
+                            <div className={`link navbar__link ${pageTitle.includes('Contact') ? 'navbar__link-active':''}`}>
+                                <Link href="/about-me/contact">Contact</Link>
+                            </div>
                         </div>
                     </details>
                 </nav>
                 <img id="navbar__toggle-btn" className="navbar__toggle-btn" src="/assets/navbar-toggler.svg" onClick={toggleNav} alt="Mobile toggle icon" />
             </div>
             <div id="navbar__dropdown" className={navbarDropdownClass}>
-                    <Link id="home" className={`link btn ${pageTitle.includes('Home') ? 'btn-active':''}`} href="/">Home</Link>
+                    <div className={`link-sm btn ${pageTitle.includes('Home') ? 'btn-active':''}`}>
+                        <Link id="home" href="/">Home</Link>
+                    </div>
                     <details>
                      <summary className={`link btn ${pageTitle.includes('Home') ? '':'btn-active'}`}>About Me</summary>
                          <div className="navbar__details">
-                            <Link id="about-me" className={`link-sm btn-sm ${pageTitle.includes('About') ? 'btn-active':''}`} href="/about-me">About Me</Link>
-                            <Link id="work"     className={`link-sm btn-sm ${pageTitle.includes('Work') ? 'btn-active':''}`} href="/about-me/work">My Work</Link>
-                            <Link id="services" className={`link-sm btn-sm ${pageTitle.includes('Services') ? 'btn-active':''}`} href="/about-me/services">Services</Link>
-                            <Link id="contact"  className={`link-sm btn-sm ${pageTitle.includes('Contact') ? 'btn-active':''}`} href="/about-me/contact">Contact</Link>
+                            <div className={`link-sm btn-sm ${pageTitle.includes('About') ? 'btn-active':''}`} >
+                                <Link id="about-me" href="/about-me">About Me</Link>
+                            </div>
+                            <div  className={`link-sm btn-sm ${pageTitle.includes('Work') ? 'btn-active':''}`}>
+                                <Link id="work" href="/about-me/work">My Work</Link>
+                            </div>
+                            <div className={`link-sm btn-sm ${pageTitle.includes('Services') ? 'btn-active':''}`}> 
+                                <Link id="services" href="/about-me/services">Services</Link>
+                            </div>
+                            <div className={`link-sm btn-sm ${pageTitle.includes('Contact') ? 'btn-active':''}`}> 
+                                <Link id="contact" href="/about-me/contact">Contact</Link>
+                            </div>
                         </div>
                     </details>
             </div>

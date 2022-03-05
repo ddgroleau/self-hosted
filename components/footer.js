@@ -6,7 +6,7 @@ const Footer = () => {
     <footer>
         <div className="footer__content">
             <strong>{year} | Dan Groleau</strong>
-            <Link className="footer__privacy" href="/privacy">Privacy Policy and Terms of Use</Link>
+            <Link href="/privacy">Privacy Policy and Terms of Use</Link>
         </div>
     </footer>
   )}

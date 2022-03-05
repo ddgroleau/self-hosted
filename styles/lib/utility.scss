@@ -16,16 +16,23 @@
   margin-top: 10%;
 }
 
+@mixin link {
+  
+}
 .link {
-  font-size: $md;
-  text-decoration: none;
   color:$purple;
+  a {
+    text-decoration: none;
+    font-size: $md;
+  }
 }
 
 .link-sm {
-  font-size: $rg;
+  a {
+    font-size: $rg;
   text-decoration: none;
   color:$purple;
+  }
 }
 
 .btn {
@@ -42,7 +49,7 @@
   background-color: $ghost-white;
   padding: $xs;
   margin: $xs;
-  width: 8rem;
+  width: 5rem;
 }
 
 .btn:hover, .btn-sm:hover {

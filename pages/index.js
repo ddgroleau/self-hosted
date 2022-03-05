@@ -20,10 +20,10 @@ const Home = () => {
             <h4>Top Articles and Content</h4>
           </div>
           <div className='home__article-container'>
-            <Article />
-            <Article />
-            <Article />
-            <Article />
+            <Article isThumb />
+            <Article isThumb />
+            <Article isThumb />
+            <Article isThumb />
           </div>
         </div>
       </div>

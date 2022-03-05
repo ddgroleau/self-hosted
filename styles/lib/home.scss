@@ -54,7 +54,8 @@
 }
 
 .home__article-container {
-    @include flex();
+    @include flexColumn();
+    @include centerBothAxis();
     flex-wrap: wrap;
     justify-content: center;
 }
@@ -63,6 +64,9 @@
     .home__brand {
        flex-flow: row nowrap;
        width: 80%;
+    }
+    .home__article-container {
+        flex-direction: row;
     }
     .home__brand-logo {
         max-width: 10rem;

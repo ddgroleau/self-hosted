@@ -1,5 +1,9 @@
 @import './lib.scss';
 
+header {
+  background-color: $slate-ghost;
+
+}
 .nav {
   @include flexColumn();
   @include centerBothAxis();

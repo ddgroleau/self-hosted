@@ -1,8 +1,15 @@
 import Article from '../components/article';
 import Image from 'next/image';
 import Layout from './layout';
+import articleStore from '../articleStore';
+import { useState } from 'react';
 
 const Home = () => {
+  const [articles, setArticles] = useState(articleStore);
+
+  const getArticles = () => {
+    return articles.map(article => <Article key={article.articleId} isThumb article={article} />)
+  }
   return (
     <Layout pageTitle={'Home | Self-Hosted'}>
       <div className="home__container">
@@ -20,10 +27,7 @@ const Home = () => {
             <h4>Top Articles and Content</h4>
           </div>
           <div className='home__article-container'>
-            <Article isThumb />
-            <Article isThumb />
-            <Article isThumb />
-            <Article isThumb />
+              {getArticles()}
           </div>
         </div>
       </div>

@@ -1,9 +1,5 @@
 @import './lib.scss';
 
-header {
-  background-color: $slate-ghost;
-
-}
 .nav {
   @include flexColumn();
   @include centerBothAxis();
@@ -15,6 +11,8 @@ header {
   justify-content: space-between;
   align-items: center;
   flex-wrap: nowrap;
+  background-color: $slate-ghost;
+  padding: $sm 0;
 }
 
 .navbar__toggle-btn {

@@ -48,6 +48,5 @@ body, html {
   header {
     @include flexColumn();
     position: fixed;
-    top: $sm;
     z-index: 1;
   }

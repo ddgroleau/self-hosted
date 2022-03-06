@@ -23,7 +23,7 @@ const Navbar = ({pageTitle=""}) => {
       <>
         <title>{pageTitle}</title>
         <header>
-            <div id="navbar" className="navbar">
+            <div id="navbar" className="navbar" style={pageTitle.includes('About Me') ? {background: "none"} : undefined}>
                 <div className="navbar__social-icons">
                     <Link href="https://github.com/ddgroleau" >
                         <img

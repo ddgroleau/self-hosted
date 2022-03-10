@@ -7,7 +7,7 @@ import Layout from '../layout'
 const Articles = () => {
   const router = useRouter()
   const { articleId } = router.query;
-  const [article, setArticle] = useState({})
+  const [article, setArticle] = useState(articleStore[0])
   
   useEffect(()=> {
     setArticle(articleStore.filter(article => article.articleId === articleId)[0])

@@ -35,10 +35,15 @@ const articleStore = [
               {
                 text:`Fast forward three months, and I had vastly improved my performance and efficiency at work  -  what 
               had previously taken me 40 hours to complete manually, was now being done in four hours via programs 
-              I wrote. But I found that the best parts of my day were writing new programs, and I set out to train 
-              myself to become a software engineer`,
+              I wrote.`,
                 element:"p",
                 important:"I had vastly improved my performance and efficiency at work"
+              },
+              {
+                text:`I came to the realization that the best parts of my day were spent writing new programs, 
+                and I set out to train myself to become a software engineer.`,
+                element:"p",
+                important:"train myself to become a software engineer"
               }
             ]
           },
